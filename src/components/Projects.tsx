@@ -102,7 +102,7 @@ const projects = [
         title: 'Formafusion(Agenda)',
         description: 'Développement Front , Back et maintenance pour une plateforme de gestion de formation conçu pour répondre aux besoins spécifiques des centres de formation et des entreprises',
         technologies: ['Laravel', 'Jquery','MySQL'],
-        demoLink: '#',
+        demoLink: 'https://youtu.be/lhJYq9pvrdk',
         repoLink: '#',
         image: img7,
     },
