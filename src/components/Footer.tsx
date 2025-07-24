@@ -1,4 +1,4 @@
-import { Keyboard, Facebook, Twitter, Youtube, Linkedin, Disc2Icon } from "lucide-react"
+import { Keyboard, Facebook, Linkedin, Disc2Icon } from "lucide-react"
 
 const Footer = () => {
     return (
@@ -8,7 +8,7 @@ const Footer = () => {
                 <Keyboard className="w-10 h-10" />
                 <p className="font-bold">
                     ANDRY
-                    <span className="text-green-500">DEST</span>
+                    <span className="text-green-500">DEV</span>
                 </p>
                 <p>Copyright © {new Date().getFullYear()} -  Tous droits réservés</p>
             </aside>
