@@ -10,6 +10,8 @@ import img7 from '../assets/projects/7.png';
 import img8 from '../assets/projects/8.png';
 import img9 from '../assets/projects/9.png';
 import img10 from '../assets/projects/10.png';
+import img11 from '../assets/projects/11.png';
+import img12 from '../assets/projects/12.png';
 import { Github, Video } from "lucide-react";
 
 
@@ -49,6 +51,24 @@ const projects = [
         demoLink: '#',
         repoLink: '#',
         image: img10,
+    },
+    {
+        id: 11,
+        title: 'Site web Thinknat',
+        description: 'Site qui met en valeur des produits artisanaux et locaux comme des vases, fontaines,… de la société Thinknat  ',
+        technologies: ['Symfony', 'CSS BOOTSTRAP', 'MySql'],
+        demoLink: '#',
+        repoLink: '#',
+        image: img11,
+    },
+    {
+        id: 12,
+        title: 'Site web pour l\'ambassade de Chine',
+        description: 'Développement d’un site web et d’une back-office destiné à l’ambassade de Chine à Madagascar',
+        technologies: ['Symfony', 'CSS', 'MySql'],
+        demoLink: '#',
+        repoLink: '#',
+        image: img12,
     },
     // {
     //     id: 4,
