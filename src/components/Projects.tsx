@@ -153,7 +153,7 @@ const Projects = () => {
                             ))}
                         </div>
                         <div className="flex">
-                            <a className="btn btn-accent w-2/3" href={project.demoLink}>
+                            <a className="btn btn-accent w-2/3" href={project.demoLink} target="_blank">
                                 Demo
                                 <Video className="w-4" />
                             </a>
