@@ -153,11 +153,18 @@ const Projects = () => {
                             ))}
                         </div>
                         <div className="flex">
-                            <a className="btn btn-accent w-2/3" href={project.demoLink} target="_blank">
-                                Demo
-                                <Video className="w-4" />
-                            </a>
-
+                            {
+                                (project.demoLink!="#")?
+                                <a className="btn btn-accent w-2/3" href={project.demoLink}  target="_blank ">
+                                    Demo
+                                    <Video className="w-4" />
+                                </a>
+                                :
+                                 <a className="btn btn-accent w-2/3" href={project.demoLink} >
+                                    Demo
+                                    <Video className="w-4" />
+                                </a>
+                            }
                             <a className="btn btn-neutral w-1/3 ml-2" href={project.repoLink}>
                                 <Github className="w-4" />
                             </a>
