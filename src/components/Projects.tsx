@@ -66,7 +66,7 @@ const projects = [
         title: 'Site web pour l\'ambassade de Chine',
         description: 'Développement d’un site web et d’une back-office destiné à l’ambassade de Chine à Madagascar',
         technologies: ['Symfony', 'CSS', 'MySql'],
-        demoLink: '#',
+        demoLink: 'https://youtu.be/hwK9rQuMPB4',
         repoLink: '#',
         image: img12,
     },
