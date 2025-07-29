@@ -57,7 +57,7 @@ const projects = [
         title: 'Site web Thinknat',
         description: 'Site qui met en valeur des produits artisanaux et locaux comme des vases, fontaines,… de la société Thinknat  ',
         technologies: ['Symfony', 'CSS BOOTSTRAP', 'MySql'],
-        demoLink: '#',
+        demoLink: 'https://youtu.be/kYwdAiTJOWk',
         repoLink: '#',
         image: img11,
     },
