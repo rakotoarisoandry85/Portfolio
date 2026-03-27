@@ -10,6 +10,7 @@ import imgTAILWIND from "../assets/techno/tailwind.png";
 import imgPHP from "../assets/techno/php.png";
 import imgSYMFONY from "../assets/techno/symfony.png";
 import imgLARAVEL from "../assets/techno/laravel.png";
+import imgPYTHON from "../assets/techno/python.png";
 
 import thinknat from "../assets/companies/Logo.png";
 import dpe from "../assets/companies/dpe.png";
@@ -25,10 +26,10 @@ const skills = [
     { id: 5, name: "Node.js", image: imgNODE },
     { id: 6, name: "Tailwind CSS", image: imgTAILWIND },
     { id: 7, name: "TypeScript", image: imgTYPE },
-   // { id: 8, name: "Next.js", image: imgNEXT },
     { id: 8, name: "Php", image: imgPHP },
-     { id: 9, name: "Laravel", image: imgLARAVEL },
-     { id: 10, name: "Symfony", image: imgSYMFONY },
+    { id: 9, name: "Laravel", image: imgLARAVEL },
+    { id: 10, name: "Symfony", image: imgSYMFONY },
+    { id: 11, name: "Python", image: imgPYTHON },
 ];
 
 
