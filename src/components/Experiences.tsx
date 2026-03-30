@@ -17,6 +17,7 @@ import dpe from "../assets/companies/dpe.png";
 import logoChine from "../assets/companies/logoChine.png";
 import upskill from "../assets/companies/upskill.png";
 import MoneyMaker from "../assets/companies/MoneyMaker.png";
+import bfm from "../assets/companies/bfm.png";
 
 const skills = [
     { id: 1, name: "HTML", image: imgHTML },
@@ -36,9 +37,21 @@ const skills = [
 const experiences = [
     {
         id: 1,
+        role: "Stagiaire Développeur d'application",
+        company: "Banque Foibe Madagascar",
+        period: "Février 2026 - Avril 2026",
+        description: [
+            "Exportation des données de format Excel vers l'application.",
+            "Mise en place de FastAPI de l'application.",
+            "Calcul des scores de conformité.",           
+        ],
+        image: bfm,
+    },
+    {
+        id: 2,
         role: "Développeur Web",
         company: "Upskill",
-        period: "15 juin 2023 - Présent",
+        period: "15 juin 2023 - Septembre 2025",
         description: [
             "Cadrage des photos des utilisateurs du site(Formateurs, Apprenants,...) ",
             "Mise en place du filtrage des projets de formation.",
@@ -48,7 +61,7 @@ const experiences = [
         image: upskill,
     },
     {
-        id: 2,
+        id: 3,
         role: "Développeur Web",
         company: "Ambassade de Chine",
         period: "Janvier 2023 - Septembre 2023",
@@ -59,7 +72,7 @@ const experiences = [
         image: logoChine,
     },
     {
-        id: 3,
+        id: 4,
         role: "Stagiaire Développeur Web",
         company: "DPE",
         period: "Octobre 2022 - Décembre 2022",
@@ -70,7 +83,7 @@ const experiences = [
         image: dpe,
     },
     {
-        id: 4,
+        id: 5,
         role: "Développeur Web",
         company: "ThinkNat",
         period: "Mars 2022 - Septembre 2022",
@@ -81,7 +94,7 @@ const experiences = [
         image: thinknat,
     },
     {
-        id: 5,
+        id: 6,
         role: "Résponsable de site",
         company: "Money Maker",
         period: "Février 2010 - Janvier 2021",

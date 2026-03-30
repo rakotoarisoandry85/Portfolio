@@ -12,6 +12,7 @@ import img9 from '../assets/projects/9.png';
 import img10 from '../assets/projects/10.png';
 import img11 from '../assets/projects/11.png';
 import img12 from '../assets/projects/12.png';
+import img13 from '../assets/projects/13.png';
 import { Github, Video } from "lucide-react";
 
 
@@ -123,6 +124,15 @@ const projects = [
         demoLink: '#',
         repoLink: '#',
         image: img9,
+    },
+    {
+        id: 10,
+        title: 'Pokedex',
+        description: 'Application web Pokedex rétro-futuriste sombre utilisant les artworks HD officiels de PokeAPI, avec filtres par type/évolution/stats total (min/max), tri, pagination 20 Pokémon/page, modal détails à barres de stats animées, skeleton loading et design responsive mobile/desktop via les polices Press Start 2P et Nunito.',
+        technologies: ['React', 'Python','FastAPI'],
+        demoLink: '#',
+        repoLink: 'https://github.com/rakotoarisoandry85/pokedex-fullstack',
+        image: img13,
     },
 ];
 
