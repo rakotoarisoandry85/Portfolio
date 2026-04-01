@@ -140,9 +140,9 @@ const Projects = () => {
     return (
         <div className="mt-10" id="Projects">
             <Title title="Mes Projets" />
-            <div className="grid md:grid-cols-3 gap-4 ">
+            <div className="  grid md:grid-cols-3 gap-4 ">
                 {projects.map((project) => (
-                    <div key={project.id} className="bg-base-300 p-5 h-fit rounded-xl shadow-lg ">
+                    <div key={project.id} className=" project-card bg-base-300 p-5 h-fit rounded-xl shadow-lg ">
                         <img
                             src={project.image}
                             alt={project.title}

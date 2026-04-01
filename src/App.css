@@ -1,21 +1,17 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* ─── Variables ─────────────────────────────────────────────────────────── */
+:root {
+  --bg:        #0d0d14;
+  --surface:   #16161f;
+  --surface2:  #1e1e2e;
+  --border:    #2a2a3d;
+  --text:      #e8e8f0;
+  --text-muted:#888;
+  --accent:    #e63946;
+  --red:       #e63946;
+  --radius:    14px;
+  --font-pixel:'Press Start 2P';
+  --font-body: 'Nunito', sans-serif;
 }
 
 @keyframes logo-spin {
@@ -33,10 +29,65 @@
   }
 }
 
-.card {
-  padding: 2em;
+/* ─── Grid ───────────────────────────────────────────────────────────────── */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 18px;
+}
+.loading-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 18px;
+}
+.card-skeleton {
+  height: 240px; border-radius: var(--radius);
+  background: linear-gradient(90deg, var(--surface) 25%, var(--surface2) 50%, var(--surface) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s infinite;
+}
+@keyframes shimmer {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
 }
 
-.read-the-docs {
-  color: #888;
+/* ─── Project Card ───────────────────────────────────────────────────────── */
+.project-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 14px 14px;
+  cursor: pointer;
+  position: relative; overflow: hidden;
+  transition: transform .2s, box-shadow .2s, border-color .2s;
+  display: flex; flex-direction: column; gap: 8px;
 }
+.project-card::before {
+  content: ''; position: absolute; inset: 0;
+  background: radial-gradient(circle at 50% 40%, var(--card-glow, rgba(255,255,255,.05)) 0%, transparent 70%);
+  opacity: 0; transition: opacity .25s;
+}
+.project-card:hover { transform: translateY(-5px); border-color: var(--card-accent); }
+.project-card:hover { box-shadow: 0 10px 30px var(--card-glow, rgba(255,255,255,.1)); }
+.project-card:hover::before { opacity: 1; }
+
+.card-id { font-size: 11px; color: var(--text-muted); font-weight: 700; align-self: flex-start; }
+.card-img-wrap { position: relative; width: 100px; height: 100px; }
+.img-skeleton {
+  position: absolute; inset: 0; border-radius: 50%;
+  background: var(--surface2); animation: shimmer 1.4s infinite;
+  background-size: 200% 100%;
+}
+.card-img-wrap img { width: 100px; height: 100px; object-fit: contain; transition: opacity .3s; }
+.card-name { font-weight: 800; font-size: 14px; text-align: center; }
+.card-types { display: flex; flex-wrap: wrap; gap: 5px; justify-content: center; }
+.type-badge {
+  font-size: 10px; font-weight: 700; padding: 3px 9px; border-radius: 20px;
+  text-transform: uppercase; letter-spacing: .5px;
+}
+.card-total {
+  display: flex; justify-content: space-between; width: 100%;
+  font-size: 12px; color: var(--text-muted); margin-top: 4px;
+}
+.card-total strong { color: var(--text); }
+
