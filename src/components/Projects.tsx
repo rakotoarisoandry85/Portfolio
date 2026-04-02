@@ -13,6 +13,7 @@ import img10 from '../assets/projects/10.png';
 import img11 from '../assets/projects/11.png';
 import img12 from '../assets/projects/12.png';
 import img13 from '../assets/projects/13.png';
+import img14 from '../assets/projects/14.png';
 import { Github, Video } from "lucide-react";
 
 
@@ -133,6 +134,15 @@ const projects = [
         demoLink: '#',
         repoLink: 'https://github.com/rakotoarisoandry85/pokedex-fullstack',
         image: img13,
+    },
+    {
+        id: 11,
+        title: 'Mini jeu de combat navale',
+        description: 'Naval Combat est un jeu de bataille navale joueur vs IA, entièrement en React. Le plateau de jeu est une grille 10x10 où les joueurs placent stratégiquement leurs navires. Les joueurs alternent les tirs pour tenter de couler les navires adverses. L\'IA utilise une stratégie de tir intelligente pour offrir un défi engageant, le premier à couler tous les navires adverses gagne.',
+        technologies: ['React', 'JavaScript','CSS'],
+        demoLink: '#',
+        repoLink: 'https://github.com/rakotoarisoandry85/react_combat_naval.git',
+        image: img14,
     },
 ];
 

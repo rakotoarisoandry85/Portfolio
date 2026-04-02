@@ -66,6 +66,7 @@
   content: ''; position: absolute; inset: 0;
   background: radial-gradient(circle at 50% 40%, var(--card-glow, rgba(255,255,255,.05)) 0%, transparent 70%);
   opacity: 0; transition: opacity .25s;
+  pointer-events: none;
 }
 .project-card:hover { transform: translateY(-5px); border-color: var(--card-accent); }
 .project-card:hover { box-shadow: 0 10px 30px var(--card-glow, rgba(255,255,255,.1)); }
