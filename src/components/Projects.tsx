@@ -1,199 +1,181 @@
-import Title from "./Title"
-
-// import img1 from '../assets/projects/1.png';
-// import img2 from '../assets/projects/2.png';
-// import img3 from '../assets/projects/3.png';
-// import img4 from '../assets/projects/4.png';
-// import img5 from '../assets/projects/5.png';
-// import img6 from '../assets/projects/6.png';
-import img7 from '../assets/projects/7.png';
-import img8 from '../assets/projects/8.png';
-import img9 from '../assets/projects/9.png';
-import img10 from '../assets/projects/10.png';
-import img11 from '../assets/projects/11.png';
-import img12 from '../assets/projects/12.png';
-import img13 from '../assets/projects/13.png';
-import img14 from '../assets/projects/14.png';
 import { Github, Video } from "lucide-react";
+import Title from "./Title";
 
+import img7 from "../assets/projects/7.png";
+import img8 from "../assets/projects/8.png";
+import img9 from "../assets/projects/9.png";
+import img10 from "../assets/projects/10.png";
+import img11 from "../assets/projects/11.png";
+import img12 from "../assets/projects/12.png";
+import img13 from "../assets/projects/13.png";
+import img14 from "../assets/projects/14.png";
 
 const projects = [
-    // {
-    //     id: 1,
-    //     title: 'Gestionnaire de tâches',
-    //     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae magni deserunt debitis recusandae ab harum totam, eum facilis et ratione officia ut inventore aspernatur',
-    //     technologies: ['React', 'Node.js', 'Tailwind CSS'],
-    //     demoLink: '#',
-    //     repoLink: '#',
-    //     image: img1,
-    // },
-    // {
-    //     id: 2,
-    //     title: 'Plateforme E-commerce',
-    //     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae magni deserunt debitis recusandae ab harum totam, eum facilis et ratione officia ut inventore aspernatur',
-    //     technologies: ['Next.js', 'TypeScript', 'Prisma'],
-    //     demoLink: '#',
-    //     repoLink: '#',
-    //     image: img2,
-    // },
-    // {
-    //     id: 3,
-    //     title: 'Portfolio interactif',
-    //     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae magni deserunt debitis recusandae ab harum totam, eum facilis et ratione officia ut inventore aspernatur',
-    //     technologies: ['HTML', 'CSS', 'JavaScript'],
-    //     demoLink: '#',
-    //     repoLink: '#',
-    //     image: img3,
-    // },
-      {
-        id: 10,
-        title: 'Portfolio interactif',
-        description: 'Portfolio interactif conçu en React et typescript avec la technologie daysyUI ',
-        technologies: ['REACT', 'CSS Tailwind', 'TypeScript'],
-        demoLink: '#',
-        repoLink: '#',
-        image: img10,
-    },
-    {
-        id: 11,
-        title: 'Site web Thinknat',
-        description: 'Site qui met en valeur des produits artisanaux et locaux comme des vases, fontaines,… de la société Thinknat  ',
-        technologies: ['Symfony', 'CSS BOOTSTRAP', 'MySql'],
-        demoLink: 'https://youtu.be/kYwdAiTJOWk',
-        repoLink: '#',
-        image: img11,
-    },
-    {
-        id: 12,
-        title: 'Site web pour l\'ambassade de Chine',
-        description: 'Développement d’un site web et d’une back-office destiné à l’ambassade de Chine à Madagascar',
-        technologies: ['Symfony', 'CSS', 'MySql'],
-        demoLink: 'https://youtu.be/hwK9rQuMPB4',
-        repoLink: '#',
-        image: img12,
-    },
-    // {
-    //     id: 4,
-    //     title: 'Application de Chat en temps réel',
-    //     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae magni deserunt debitis recusandae ab harum totam, eum facilis et ratione officia ut inventore aspernatur',
-    //     technologies: ['React', 'Socket.io', 'Express.js'],
-    //     demoLink: '#',
-    //     repoLink: '#',
-    //     image: img4,
-    // },
-    // {
-    //     id: 5,
-    //     title: 'Système de réservation de salles',
-    //     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae magni deserunt debitis recusandae ab harum totam, eum facilis et ratione officia ut inventore aspernatur',
-    //     technologies: ['Next.js', 'MongoDB', 'Chakra UI'],
-    //     demoLink: '#',
-    //     repoLink: '#',
-    //     image: img5,
-    // },
-    // {
-    //     id: 6,
-    //     title: 'Analyseur de sentiment',
-    //     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae magni deserunt debitis recusandae ab harum totam, eum facilis et ratione officia ut inventore aspernatur',
-    //     technologies: ['Python', 'Flask', 'NLTK'],
-    //     demoLink: '#',
-    //     repoLink: '#',
-    //     image: img6,
-    // },
-     {
-        id: 7,
-        title: 'Formafusion(Agenda)',
-        description: 'Développement Front , Back et maintenance pour une plateforme de gestion de formation conçu pour répondre aux besoins spécifiques des centres de formation et des entreprises',
-        technologies: ['Laravel', 'Jquery','MySQL'],
-        demoLink: 'https://youtu.be/lhJYq9pvrdk',
-        repoLink: '#',
-        image: img7,
-    },
-    {
-        id: 8,
-        title: 'Formafusion(Lieu&Salle)',
-        description: 'Développement Front , Back et maintenance pour une plateforme de gestion de formation conçu pour répondre aux besoins spécifiques des centres de formation et des entreprises',
-        technologies: ['Laravel', 'Javascript','MySQL'],
-        demoLink: '#',
-        repoLink: '#',
-        image: img8,
-    },
-    {
-        id: 9,
-        title: 'Formafusion(Catalogue)',
-        description: 'Développement Front , Back et maintenance pour une plateforme de gestion de formation conçu pour répondre aux besoins spécifiques des centres de formation et des entreprises',
-        technologies: ['Laravel', 'Jquery','MySQL'],
-        demoLink: '#',
-        repoLink: '#',
-        image: img9,
-    },
-    {
-        id: 10,
-        title: 'Pokedex',
-        description: 'Application web Pokedex rétro-futuriste sombre utilisant les artworks HD officiels de PokeAPI, avec filtres par type/évolution/stats total (min/max), tri, pagination 20 Pokémon/page, modal détails à barres de stats animées, skeleton loading et design responsive mobile/desktop via les polices Press Start 2P et Nunito.',
-        technologies: ['React', 'Python','FastAPI'],
-        demoLink: '#',
-        repoLink: 'https://github.com/rakotoarisoandry85/pokedex-fullstack',
-        image: img13,
-    },
-    {
-        id: 11,
-        title: 'Mini jeu de combat navale',
-        description: 'Naval Combat est un jeu de bataille navale joueur vs IA, entièrement en React. Le plateau de jeu est une grille 10x10 où les joueurs placent stratégiquement leurs navires. Les joueurs alternent les tirs pour tenter de couler les navires adverses. L\'IA utilise une stratégie de tir intelligente pour offrir un défi engageant, le premier à couler tous les navires adverses gagne.',
-        technologies: ['React', 'JavaScript','CSS'],
-        demoLink: '#',
-        repoLink: 'https://github.com/rakotoarisoandry85/react_combat_naval.git',
-        image: img14,
-    },
+  {
+    id: 1,
+    title: "Portfolio interactif",
+    description:
+      "Portfolio conçu en React, TypeScript et DaisyUI pour présenter mon profil, mes expériences et mes réalisations.",
+    technologies: ["React", "Tailwind CSS", "TypeScript"],
+    demoLink: "#",
+    repoLink: "#",
+    image: img10,
+  },
+  {
+    id: 2,
+    title: "Site web ThinkNat",
+    description:
+      "Site vitrine valorisant des produits artisanaux et locaux, avec une interface d'administration dédiée.",
+    technologies: ["Symfony", "Bootstrap", "MySQL"],
+    demoLink: "https://youtu.be/kYwdAiTJOWk",
+    repoLink: "#",
+    image: img11,
+  },
+  {
+    id: 3,
+    title: "Ambassade de Chine",
+    description:
+      "Site web et back-office pour organiser des contenus culturels, touristiques et événementiels.",
+    technologies: ["Symfony", "CSS", "MySQL"],
+    demoLink: "https://youtu.be/hwK9rQuMPB4",
+    repoLink: "#",
+    image: img12,
+  },
+  {
+    id: 4,
+    title: "Formafusion Agenda",
+    description:
+      "Développement front, back et maintenance d'un module agenda pour une plateforme de gestion de formation.",
+    technologies: ["Laravel", "jQuery", "MySQL"],
+    demoLink: "https://youtu.be/lhJYq9pvrdk",
+    repoLink: "#",
+    image: img7,
+  },
+  {
+    id: 5,
+    title: "Formafusion Lieu & Salle",
+    description:
+      "Module de gestion des lieux et salles pensé pour simplifier l'organisation des sessions de formation.",
+    technologies: ["Laravel", "JavaScript", "MySQL"],
+    demoLink: "#",
+    repoLink: "#",
+    image: img8,
+  },
+  {
+    id: 6,
+    title: "Formafusion Catalogue",
+    description:
+      "Catalogue de formations avec fonctionnalités de gestion et consultation adaptées aux centres de formation.",
+    technologies: ["Laravel", "jQuery", "MySQL"],
+    demoLink: "#",
+    repoLink: "#",
+    image: img9,
+  },
+  {
+    id: 7,
+    title: "Pokedex",
+    description:
+      "Application fullstack avec filtres, tri, pagination, détails animés et interface responsive.",
+    technologies: ["React", "Python", "FastAPI"],
+    demoLink: "#",
+    repoLink: "https://github.com/rakotoarisoandry85/pokedex-fullstack",
+    image: img13,
+  },
+  {
+    id: 8,
+    title: "Mini jeu de combat naval",
+    description:
+      "Jeu React joueur contre IA avec placement de navires, tirs alternés et logique de victoire.",
+    technologies: ["React", "JavaScript", "CSS"],
+    demoLink: "#",
+    repoLink: "https://github.com/rakotoarisoandry85/react_combat_naval.git",
+    image: img14,
+  },
 ];
 
 const Projects = () => {
-    return (
-        <div className="mt-10" id="Projects">
-            <Title title="Mes Projets" />
-            <div className="  grid md:grid-cols-3 gap-4 ">
-                {projects.map((project) => (
-                    <div key={project.id} className=" project-card bg-base-300 p-5 h-fit rounded-xl shadow-lg ">
-                        <img
-                            src={project.image}
-                            alt={project.title}
-                            className="w-full rounded-xl h-56 object-cover"
-                        />
-                        <div>
-                            <h1 className="my-2 font-bold">
-                                {project.title}
-                            </h1>
-                            <p className="text-sm">{project.description}</p>
+  return (
+    <section className="section-shell" id="Projects">
+      <Title title="Mes projets" />
+      <p className="section-intro">
+        Une sélection de projets web couvrant conception d'interfaces,
+        développement backend, intégration d'APIs et logique applicative.
+      </p>
 
-                        </div>
-                        <div className="flex flex-wrap gap-2 my-3">
-                            {project.technologies.map((tech) => (
-                                <span className="badge badge-accent badge-sm">
-                                    {tech}
-                                </span>
-                            ))}
-                        </div>
-                        <div className="flex">
-                            {
-                                (project.demoLink!="#")?
-                                <a className="btn btn-accent w-2/3" href={project.demoLink}  target="_blank ">
-                                    Demo
-                                    <Video className="w-4" />
-                                </a>
-                                :
-                                 <a className="btn btn-accent w-2/3" href={project.demoLink} >
-                                    Demo
-                                    <Video className="w-4" />
-                                </a>
-                            }
-                            <a className="btn btn-neutral w-1/3 ml-2" href={project.repoLink}>
-                                <Github className="w-4" />
-                            </a>
-                        </div>
-                    </div>
+      <div className="projects-grid">
+        {projects.map((project) => {
+          const hasDemo = project.demoLink !== "#";
+          const hasRepo = project.repoLink !== "#";
+
+          return (
+            <article key={project.id} className="project-card">
+              <img
+                src={project.image}
+                alt={`Capture du projet ${project.title}`}
+                className="project-image"
+              />
+
+              <div>
+                <h3>{project.title}</h3>
+                <p>{project.description}</p>
+              </div>
+
+              <div className="tech-list">
+                {project.technologies.map((tech) => (
+                  <span key={`${project.id}-${tech}`} className="tech-chip">
+                    {tech}
+                  </span>
                 ))}
-            </div>
-        </div>
-    )
-}
+              </div>
 
-export default Projects
+              <div className="project-actions">
+                {hasDemo ? (
+                  <a
+                    className="btn portfolio-button button-primary"
+                    href={project.demoLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`Voir la démonstration de ${project.title}`}
+                  >
+                    Demo
+                    <Video className="w-4 h-4" aria-hidden="true" />
+                  </a>
+                ) : (
+                  <span
+                    className="btn portfolio-button button-secondary is-disabled"
+                    aria-disabled="true"
+                  >
+                    Demo
+                    <Video className="w-4 h-4" aria-hidden="true" />
+                  </span>
+                )}
+
+                {hasRepo ? (
+                  <a
+                    className="icon-link"
+                    href={project.repoLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`Voir le code source de ${project.title}`}
+                  >
+                    <Github className="w-5 h-5" aria-hidden="true" />
+                  </a>
+                ) : (
+                  <span
+                    className="icon-link is-disabled"
+                    aria-label={`Code source indisponible pour ${project.title}`}
+                    aria-disabled="true"
+                  >
+                    <Github className="w-5 h-5" aria-hidden="true" />
+                  </span>
+                )}
+              </div>
+            </article>
+          );
+        })}
+      </div>
+    </section>
+  );
+};
+
+export default Projects;

@@ -1,10 +1,14 @@
-interface TitleProps{
-    title:string
-}
-const Title = ({title}:TitleProps) => {
-  return (
-    <h1 className="uppercase font-bold mb-5 text-center"> {title}</h1>
-  )
+interface TitleProps {
+  title: string;
 }
 
-export default Title
+const Title = ({ title }: TitleProps) => {
+  return (
+    <div className="section-heading">
+      <h2>{title}</h2>
+      <span className="section-heading-line" aria-hidden="true" />
+    </div>
+  );
+};
+
+export default Title;

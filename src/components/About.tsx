@@ -6,55 +6,63 @@ const aboutSections =[
     {
         id:1,
         title:"Développeur Frontend",
-        description:"Je suis un développeur frontend avec une bonne expérience.",
-        icon:<LetterText className="text-primary scale-150"/>
+        description:"Je construis des interfaces lisibles, réactives et faciles à parcourir.",
+        icon:<LetterText size={24}/>
     },
 
     {
         id:2,
         title:"Développeur Backend",
-        description:"Je maitrise les bases du développement backend pour créer des Apis robustes.",
-        icon:<CalendarSync className="text-primary scale-150"/>
+        description:"Je conçois des APIs robustes et des bases de données adaptées aux usages métier.",
+        icon:<CalendarSync size={24}/>
     },
 
     {
         id:3,
         title:"Passionné par l'UI/UX",
-        description:"Créer des interfaces utilisiteur attrayantes et fonctionnelles est ma priorité",
-        icon:<Paintbrush className="text-primary scale-150"/>
+        description:"Je cherche l'équilibre entre esthétique, clarté et efficacité pour l'utilisateur.",
+        icon:<Paintbrush size={24}/>
     },
 ];
 function About() {
   return (
-    <div className="bg-base-300 p-10 mb-10 md:mb-32" id="About">
-        <Title title="A propos"/>
-        <div className="md:h-screen flex justify-center items-center">
-            <div className="hidden md:block">
-                <img src={img} alt=""className="w-96 object-cover rounded-xl"/>
+    <section className="section-band" id="About">
+        <div className="section-shell about-grid">
+            <div className="about-media">
+                <img src={img} alt="Espace de travail avec un ordinateur portable"/>
             </div>
 
-            <div className="md:ml-4 space-y-4">
+            <div>
+                <Title title="À propos"/>
+                <p className="section-intro">
+                    Mon profil rassemble développement web, gestion de projets numériques
+                    et curiosité pour l'intelligence artificielle. J'aime transformer des
+                    besoins concrets en parcours simples, cohérents et maintenables.
+                </p>
+
+                <div className="info-stack">
                 {
                     aboutSections.map((section)=>(
-                        <div key={section.id} className="flex flex-col md:flex-row items-center bg-base-100 p-5 rounded-xl md:w-96 shadow-xl">
-                            <div className="mb-2 md:mb-0">
+                        <article key={section.id} className="info-card">
+                            <div className="info-icon" aria-hidden="true">
                                 {section.icon}
                             </div>
-                            <div className="md:ml-4 text-center md:text-left">
-                                <h2 className="text-xl font-bold mb-1">
+                            <div>
+                                <h3>
                                     {section.title}
-                                </h2>
-                                <p className="text-sm">
+                                </h3>
+                                <p>
                                     {section.description}
                                 </p>
                             </div>
-                        </div>
+                        </article>
                     ))
                 }
+                </div>
             </div>
 
         </div>
-    </div>
+    </section>
 
   )
 }

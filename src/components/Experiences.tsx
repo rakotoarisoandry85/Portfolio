@@ -27,7 +27,7 @@ const skills = [
     { id: 5, name: "Node.js", image: imgNODE },
     { id: 6, name: "Tailwind CSS", image: imgTAILWIND },
     { id: 7, name: "TypeScript", image: imgTYPE },
-    { id: 8, name: "Php", image: imgPHP },
+    { id: 8, name: "PHP", image: imgPHP },
     { id: 9, name: "Laravel", image: imgLARAVEL },
     { id: 10, name: "Symfony", image: imgSYMFONY },
     { id: 11, name: "Python", image: imgPYTHON },
@@ -95,7 +95,7 @@ const experiences = [
     },
     {
         id: 6,
-        role: "Résponsable de site",
+        role: "Responsable de site",
         company: "Money Maker",
         period: "Février 2010 - Janvier 2021",
         description: [
@@ -108,55 +108,58 @@ const experiences = [
 
 const Experiences = () => {
     return (
-        <div id="Experiences">
+        <section className="section-shell" id="Experiences">
             <Title title="Expériences" />
-            <div className="flex  flex-col-reverse md:flex-row justify-center items-center">
-                <div className="flex flex-wrap gap-4  justify-center items-center md:w-1/3 mt-4 md:mt-0">
+            <p className="section-intro">
+                Une progression construite entre stages, missions en entreprise et
+                projets freelance, avec un fil conducteur : livrer des outils web
+                utiles, structurés et faciles à faire évoluer.
+            </p>
+
+            <div className="experience-layout">
+                <aside className="skills-panel" aria-label="Technologies maîtrisées">
+                    <div className="skills-grid">
                     {skills.map((skill) => (
-                        <div key={skill.id} className=" flex justify-center items-center flex-col">
-                            <div className=" w-24 h-24 p-2 rounded-full border-2 border-accent">
-                                <img src={skill.image} alt={skill.name}
-                                    className="object-cover rounded-full h-full w-full"
-                                />
-                            </div>
-                            <span className="mt-2 text-sm">{skill.name}</span>
+                        <div key={skill.id} className="skill-tile">
+                            <img src={skill.image} alt="" aria-hidden="true" />
+                            <span>{skill.name}</span>
                         </div>
                     ))}
-                </div>
+                    </div>
+                </aside>
 
-                <div className="md:ml-4 flex flex-col space-y-4">
-                    {experiences.map((expericence) => (
-                        <div
-                            key={expericence.id}
-                            className="project-card"
+                <div className="experience-list-wrap">
+                    {experiences.map((experience) => (
+                        <article
+                            key={experience.id}
+                            className="project-card experience-card"
                         >
-                       
-                            <div className=" flex items-center">
+                            <div className="experience-header">
                                 <img
-                                    src={expericence.image}
-                                    alt={expericence.company}
-                                    className=" object-cover h-12 w-12"
+                                    src={experience.image}
+                                    alt={`Logo ${experience.company}`}
+                                    className="company-logo"
                                 />
-                                <div className="ml-4">
-                                    <h1 className="text-xl text-accent font-bold">
-                                        {expericence.role} , {expericence.company}
-                                    </h1>
-                                    <span className="text-sm">{expericence.period}</span>
+                                <div>
+                                    <h3 className="experience-title">
+                                        {experience.role}, {experience.company}
+                                    </h3>
+                                    <span className="experience-meta">{experience.period}</span>
                                 </div>
                             </div>
-                            <ul className="list-disc ml-16 mt-2">
-                                {expericence.description.map((desc, index) => (
+                            <ul className="experience-list">
+                                {experience.description.map((desc, index) => (
                                     <li key={index}>
                                         {desc}
                                     </li>
                                 ))}
                             </ul>
-                        </div>
+                        </article>
                     
                     ))}
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

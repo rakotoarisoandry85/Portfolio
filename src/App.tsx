@@ -8,22 +8,15 @@ import Projects from "./components/Projects";
 
 export default function App() {
   return (
-    <div>
-
-      <div className="p-5 md:px-[15%]">
-        <Navbar />
+    <div className="page-shell">
+      <Navbar />
+      <main>
         <Home />
-      </div>
-
-      <About />
-
-      <div className="p-5 md:px-[15%]">
+        <About />
         <Experiences />
-        <Projects/>
-      </div>
-
-      <Footer/>
-
+        <Projects />
+      </main>
+      <Footer />
     </div>
   )
 }

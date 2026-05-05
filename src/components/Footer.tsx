@@ -1,30 +1,34 @@
-import { Keyboard, Facebook, Linkedin, Disc2Icon } from "lucide-react"
+import { Facebook, Keyboard, Linkedin, Youtube } from "lucide-react"
 
 const Footer = () => {
     return (
-        <footer className="footer footer-center  p-10">
-            <aside>
-
-                <Keyboard className="w-10 h-10" />
-                <p className="font-bold">
-                    ANDRY
-                    <span className="text-green-500">DEV</span>
-                </p>
-                <p>Copyright © {new Date().getFullYear()} -  Tous droits réservés</p>
+        <footer className="site-footer" id="Contact">
+            <div className="section-shell footer-shell">
+            <aside className="footer-brand">
+                <span className="brand-mark">
+                    <Keyboard size={22} aria-hidden="true" />
+                </span>
+                <div>
+                    <p className="font-bold">
+                        ANDRY <span className="text-[var(--color-warm)]">DEV</span>
+                    </p>
+                    <p>Copyright © {new Date().getFullYear()} - Tous droits réservés</p>
+                </div>
             </aside>
-            <nav>
-                <div className="grid grid-flow-col gap-4">
-                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                        <Linkedin className="w-6 h-6 text-current" />
+            <nav aria-label="Réseaux sociaux">
+                <div className="footer-social">
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <Linkedin className="w-5 h-5" aria-hidden="true" />
                     </a>
-                    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
-                        <Disc2Icon className="w-6 h-6 text-current" />
+                    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                        <Youtube className="w-5 h-5" aria-hidden="true" />
                     </a>
-                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                        <Facebook className="w-6 h-6 text-current" />
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <Facebook className="w-5 h-5" aria-hidden="true" />
                     </a>
                 </div>
             </nav>
+            </div>
         </footer>
     )
 }
